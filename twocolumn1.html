@@ -1,125 +1,227 @@
+<!DOCTYPE HTML>
 
-<!DOCTYPE html>
 <html>
-    <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
-    <meta http-equiv="Cache-control" content="no-cache">
-    <meta http-equiv="Pragma" content="no-cache">
-    <meta http-equiv="Expires" content="0">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenog Tecnologia</title>
-    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.6/css/all.css">
-    <style type="text/css">
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
-            line-height: 1.428571429;
-            background-color: #CEF6D8;
-            color: #2F3230;
-            padding: 0;
-            margin: 0;
-        }
-        section {
-            display: block;
-            padding: 0;
-            margin: 0;
-        }
-        .container {
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 10px;
-        }
-        .additional-info {
-            background-repeat: no-repeat;
-            background-color: #293A4A;
-            color: #FFFFFF;
-        }
-        .additional-info-items {
-            padding: 20px;
-            min-height: 193px;
-        }
-        .info-heading {
-            font-weight: bold;
-            text-align: left;
-            word-break: break-all;
-            width: 100%;
-        }
-        .status-reason {
-            font-size: 200%;
-            display: block;
-            color: #0B0B61;
-        }
-        .reason-text {
-            margin: 20px 0;
-            font-size: 16px;
-        }
-        .info-heading {
-            font-size: 190%;
-        }
-        .reason-text {
-            font-size: 140%;
-        }
+	<head>
+		<title>Izamed Corretora</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.none{
+			background-color: #ffffff;
+			border: 1px solid #dbdbdb;}
 
-         a#dynamicProviderLink, a#dynamicProviderLink:hover, a#dynamicProviderLink:active, a#dynamicProviderLink:visited {
-            color: white;
-        }
+		</style>
+	</head>
+	<body class="subpage">
+		<div id="page-wrapper">
 
-        @media (min-width: 768px) {
-            .additional-info {
-                position: relative;
-                overflow: hidden;
-                background-image: none;
-            }
-            .additional-info-items {
-                padding: 20px;
-            }
-            .container {
-                width: 90%;
-            }
-            .status-reason {
-                display: inline;
-            }
-        }
-        @media (min-width: 992px) {
-            .additional-info {
-                background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADqCAMAAACrxjhdAAAAt1BMVEUAAAAAAAD////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////5+fn////////////////////////////////6+vr///////////////////////////////////////+i5edTAAAAPXRSTlMAAQECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmJygoKSorLC0uLzAwMTIzNDU2Nzg5H7x0XAAACndJREFUeAHtXXlzGs8R7TQ3CFkHxpKxhIwtIBwgIuYY4u//uVJ2qpLKD7Q8t2Z7xpD3n6ska9/2bM9Mvz6oGEyXFoKHfmheoewx9cYehVuPHMT4jphyBtNHxHQmDGgBvZjXBuWN2gogbPy6RtcOejNPxFkb+CEYhHCfmJ6DQShfEGfMt71FOPgpE1PHOMTEY8oZ3yCr2UtiInqEftj3iLM18Afsu/xKv9B4QUzsV1XKFTzDPG+LfoLpE/LjJnzO08QCAugLalKeqP/mEmW6Qj+BPIE7IYmTyw1MFwbaksaybSxDCA4STF+wg8rH7EzMwqNibY38mlvXKDdU5pDH3TRkl40vxJkZ+DO2Nu/3HnyC7t15obGBtqRFRXo6+0Z5YQh5LHd9YGWOsF+9Is5oQXctZKbvdAAtbHHM8+GLfojWdIgPff7YifRTNiZmusW+w8fDj1xdevNnbU3VFfTEL/W33pfH31cGYBpgW9Lba3Ic8C8iA77NLe514vu8BPj6/n3lCd/VkgKXGkwYUQHAaM+yQunBmNSwbRVYh+kOcgMhvRDB1Md20YfiR+UFfvdIizp2v1vVjt0usa1pmNzAX2IFl5/xaE9aqQGSD6bxI0RZSw3uuF0YjQHepjMxHmd9IgC1NbY1VSkdeB4vXMH0KSQVIvQfERciMpcaFtW4H8iI0gB2MzfEcV3gB+IkfDtbyCATgtHB7l3TrKUG2yWOe7O2KYQIPE7xFD12Yvy6SvqoLOMf95k+BvgqogCFCx22NdltO1epYc7ycEKSaI9+UAYPGOlK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);
-            }
-            .container {
-                width: 70%;
-            }
-            .status-reason {
-                font-size: 450%;
-            }
-            .info-heading {
-                font-size: 200%;
-            }
-            .reason-text {
-                font-size: 160%;
-            }
-        }
-    </style>
-    </head>
-    <body>
-        <div class="container">
-            <span class="status-reason">
-                <i class="fas fa-user-times fa-2x"></i> Acesso Supenso temporariamente
-            </span>
-        </div>
-        <section class="additional-info">
-            <div class="container">
-                <div class="additional-info-items">
-                    <div class="info-heading">
-                        This Account has been suspended.
-                    </div>
-                    <div class="reason-text">
-                        <a href="mailto:leojunio007@gmail.com" id="dynamicProviderLink" title="leojunio007@gmail.com" rel="noopener noreferrer">Contate o responsavel pelo provedor de acesso</a> Para mais informações.
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer>
-        <br>    
-        <p align="center"><b>Copyright  &copy; 2020 - by Lenog Tecnologia<br></b></p>
-</footer>
-    </body>
+			<!-- Header -->
+				<section id="header">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Logo -->
+									<h1><a href="index.html" id="logo">Izamed Corretora</a></h1>
+
+								<!-- Nav -->
+									<nav id="nav">
+										<a href="index.html">Inicio</a>
+										<a href="threecolumn.html">A Empresa</a>
+										<a href="twocolumn1.html">Planos</a>
+										<a href="twocolumn2.html">Duvidas Frequentes</a>
+										<a href="onecolumn.html">Contato</a>
+									</nav>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Content -->				
+            <section id="content">
+					<div class="container">
+						<div class="row">
+                            <div class="col-12 col-12-medium">
+
+								<!-- Blurb -->
+									<section>
+										<h2>Escolha o Plano Perfeito Para Sua Necessidade</h2>
+										<p>
+											Oferecemos aos nossos clientes as soluções mais adequadas de contratação, com preços que cabem no seu orçamento.
+										</p>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-medium">
+
+								<!-- Feature #1 -->
+                                
+									<section>
+										<a href="odonto.html" class="bordered-feature-image"><img src="images/pic01.jpg" alt="" /></a>
+										<h3>PLANO ODONTOLÓGICO</h3>
+										<p>
+											Consulte aqui mais informações sobre os melhores planos por adesão para você. Sua saúde em primeiro lugar 
+                                            <a href="https://api.whatsapp.com/send?phone=5531999198567&text=">Solicitar Cotação</a>
+										</p>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-medium">
+
+								<!-- Feature #2 -->
+									<section>
+										<a href="adesao.html" class="bordered-feature-image"><img src="images/pic02.jpg" alt="" /></a>
+										<h3>PLANO POR ADESÃO</h3>
+										<p>
+											Veja mais informações sobre planos odontológicos e familiares, tudo que temos a oferecer para tranquilizar você e sua família.
+                                            <a href="https://api.whatsapp.com/send?phone=5531999198567&text=">Solicitar Cotação</a>
+										</p>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-medium">
+
+								<!-- Feature #3 -->
+									<section>
+										<a href="empresa.html" class="bordered-feature-image"><img src="images/pic03.jpg" alt="" /></a>
+										<h3>PLANO EMPRESARIAL</h3>
+										<p>
+                                            Preocupe-se com sua saúde e de seus funcionários, clique e confira mais sobre nossos planos empresariais. 
+                                            <a href="https://api.whatsapp.com/send?phone=5531999198567&text=">Solicitar Cotação</a>
+										</p>
+									</section>
+
+							</div>
+							<div class="col-3 col-6-medium col-12-medium">
+
+								<!-- Feature #4 -->
+									<section>
+										<a href="individual.html" class="bordered-feature-image"><img src="images/pic04.jpg" alt="" /></a>
+										<h3>PLANO INDIVIDUAL</h3>
+										<p>
+											À Izamed Corretora se preocupa com sua saúde, por isso selecionamos os melhores planos individuais para você!
+                                            <a href="https://api.whatsapp.com/send?phone=5531999198567&text=">Solicitar Cotação</a>
+										</p>
+                                        
+									</section>
+							</div>
+							<!--operadoras-->
+                            <div class="col-12 col-12-medium">
+
+								<!-- Blurb -->
+									<section>
+										<h2>As Melhores Operadoras do Mercado</h2>
+
+										<div class="row"> 	
+
+                                    
+                                            <div class="col-3 col-3-medium col-12-medium">
+                                            <!--Plano Bradesco Saúde-->
+                                                <a href="0bradesco.html"><img alt="Plano Bradesco Saúde" src="images/nossos-planos/bradesco.jpg" class="none" width="280" height="150"></a>
+                                                <a href="0bradesco.html" title="Plano Bradesco Saúde">Plano Bradesco Saúde</a>
+                                                
+                                            <!--Plano Bradesco Saúde-->
+                                        	</div>
+                                             
+                                            
+    									<div class="col-3 col-3-medium col-12-medium">  
+        									<!--Plano de Saúde Promed-->
+                								<a href="1promed.html"><img alt="Plano de Saúde Promed" src="images/nossos-planos/promed.jpg"  class="none" width="280" height="150"></a>
+                								<a href="1promed.html" title="Plano de Saúde Promed">Plano de Saúde Promed</a>
+        									<!--Plano de Saúde Promed End -->  
+    									</div>
+    									<div class="col-3 col-3-medium col-12-medium">   
+       										<!--Plano Saude Sulamerica-->
+                 								<a href="2sulamerica.html"><img alt="Plano de Saúde Sulamerica" src="images/nossos-planos/sulamerica.jpg" class="none" width="280" height="150"></a> 
+                 								<a href="2sulamerica.html" title="Plano Saude Sulamerica" class="font-12 4px pl-30 pr-20 mb-5 pt-5 pb-5 ">Plano Saúde Sulamerica</a>  
+                								
+             								<!--Plano Saude Sulamerica End -->
+    									</div>
+    									<div class="col-3 col-3-medium col-12-medium"> 
+        									<!--Plano de Saúde Unimed-->
+                 								<a href="3unimed.html"><img alt="Plano de Saúde Unimed" src="images/nossos-planos/unimed.png" class="none" width="280" height="150"></a>   
+                 								<a href="3unimed.html" title="Plano de Saúde Unimed" class="font-12 4px pl-30 pr-20 mb-5 pt-5 pb-5 ">Plano de Saúde Unimed</a>
+                						</div> 		
+            								 <!--Plano de Saúde Unimed End -->
+    									
+    									<div class="col-3 col-3-medium col-12-medium">
+											<!--Plano Golden Cross-->
+                								<a href="4golden.html"><img alt="Plano Golden Cross" src="images/nossos-planos/golden.jpg" class="none" width="280" height="150"></a>
+                								<a href="4golden.html" title="Plano Golden Cross" class="font-12 4px pl-30 pr-20 mb-5 pt-5 pb-5 ">Plano Golden Cross</a>
+											<!--Plano Golden Cross End -->
+    									</div>
+                                            
+                                            
+    									<div class="col-3 col-3-medium col-12-medium">  
+        									<!--Plano de Saúde Amil-->
+                 								<a href="5amil.html"><img alt="Plano de Saúde Amil" src="images/nossos-planos/amil.jpg" class="none" width="280" height="150"></a> <a href="5amil.html" title="Plano de Saúde Amil" class="font-12 4px pl-30 pr-20 mb-5 pt-5 pb-5 ">Plano de Saúde Amil</a> 
+        									<!--Plano de Saúde Amil End -->  
+    									</div>
+    									<div class="col-3 col-3-medium col-12-medium">   
+        									<!--Plano SAUDE Sistema Start -->
+                 								<a href="6sistema.html"><img alt="Plano SAUDE Sistema" src="images/nossos-planos/saudesistema.jpg" class="none" width="280" height="150"></a>   
+                								<a href="6sistema.html" title="Plano SAUDE Sistema" class="font-12 4px pl-30 pr-20 mb-5 pt-5 pb-5 ">Plano SAUDE Sistema</a>
+             								<!--Plano SAUDE Sistema End -->
+    									</div>
+    									<div class="col-3 col-3-medium col-12-medium"> 
+        									<!--Plano Saude Goodlife-->
+                								<a href="7good.html"><img alt="Plano Saude Goodlife" src="images/nossos-planos/goodlife.png" class="none" width="280" height="150"></a>   
+                								<a href="7good.html" title="Plano Saude Goodlife">Plano Saude Goodlife</a>
+             								<!--Plano Saude Goodlife End -->
+    									</div>
+										<div class="col-3 col-3-medium col-12-medium"> 
+        									<!--Porto Seguro Odonto-->
+                								<a href="8odontosa.html"><img alt="Porto Seguro Odonto" src="images/nossos-planos/portoseguro.jpg" class="none" width="280" height="150"></a>   
+                								<a href="8odontosa.html" title="Porto Seguro Odonto">Porto Seguro Odonto</a>
+             								<!--Porto Seguro Odonto End-->
+    									</div>
+										<div class="col-3 col-3-medium col-12-medium"> 
+        									<!--Plano de Saúde Vivamed-->
+                								<a href="9vivamed.html"><img alt="Plano de Saúde Vivamed" src="images/nossos-planos/vivamed.jpg" class="none" width="280" height="150"></a>   
+                								<a href="9vivamed.html" title="Plano de Saúde Vivamed">Plano Saude Vivamed</a>
+             								<!--Plano de Saúde Vivamed End-->
+    									</div>
+										<div class="col-3 col-3-medium col-12-medium"> 
+        									<!--Plano de Saúde Allianz-->
+                								<a href="10alian.html"><img alt="Plano de Saúde Allianz" src="images/nossos-planos/allianz.jpg" class="none" width="280" height="150"></a>   
+                								<a href="10alian.html" title="Plano de Saúde Allianz">Plano de Saúde Allianz</a>
+             								<!--Plano de Saúde Allianz End-->
+    									</div>
+										<div class="col-3 col-3-medium col-12-medium"> 
+        									<!--Plano OdontoPrev-->
+                								<a href="11odoprev.html"><img alt="Plano OdontoPrev" src="images/nossos-planos/odontoprev.jpg" class="none" width="280" height="150"></a>   
+                								<a href="11odoprev.html" title="Plano OdontoPrev">Plano OdontoPrev</a>
+             								<!--Plano OdontoPrev End-->
+    									</div>
+    
+									 </div>                                     
+									</section>
+
+							</div>
+                        
+						</div>
+                        
+					</div>
+                
+				</section>
+
+			<!-- Footer -->
+				
+			<!-- Copyright -->
+				<div id="copyright"><br>
+					&copy; Izamed Corretora 2019. Todos os direitos reservados. | Desenvolvido por: <a href="https://www.facebook.com/Lenog-Tecnologia-460585588056918/?modal=admin_todo_tour">Lenog Tecnologia</a>  
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
